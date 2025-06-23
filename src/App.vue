@@ -1,10 +1,18 @@
-<script setup>
-import {RouterView } from 'vue-router'
-</script>
 
 <template>
-  <RouterView />
+  <div id="app">
+    <router-view />
+  </div>
 </template>
 
-<style scoped>
+<script>
+export default {
+  name: 'App'
+}
+</script>
+
+<style>
+#app {
+  min-height: 100vh;
+}
 </style>
